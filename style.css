@@ -16,7 +16,6 @@ body {
   grid-gap: 2em 2em;
 }
 
-
 .grid-title {
   grid-column: 1 / span 3;
 
@@ -56,6 +55,16 @@ body {
   background-color: #f8f8f8;
   border-radius: 5px;
   box-shadow: 3px 3px 10px #ece6e6;
+}
+
+.card-content-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-media-container{
+  order: -1;
+
 }
 
 .card-title {
@@ -105,6 +114,22 @@ body {
   width: 100%;
   height: auto;
 
-  /* Bring the image to the top of the card */
-  order: -1;
+}
+
+/*
+ Grid List
+ */
+
+ .grid-list {
+  grid-template-columns: 1fr;
+
+}
+
+.grid-list .grid-title{
+  grid-column: 1 / span 1;
+}
+
+.grid-list .card{
+  flex-direction: row;
+  max-width: 600px;
 }
